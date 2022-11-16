@@ -2,7 +2,7 @@ package com.hillel.shtyka.lessons.lesson2;
 
 import java.util.Scanner;
 
-public class sevenWonders {
+public class SevenWonders {
     public static void main(String[] args) {
         double[] decLatitude = {40.416667, 30.329167, 27.171944, 41.890278, -13.163333, -22.952081, 20.683056};//Задекларував масив із довготами 7 нових чудес світу...
         double[] decLongitude = {116.083333, 35.443611, 78.041944, 12.492222, -72.545556, -43.210461, -88.568611};//...і масив із відповідними широтами (географічні координати розміщую у двох одновимірних масивах задля дотримання ТЗ)
