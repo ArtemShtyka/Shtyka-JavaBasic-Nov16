@@ -58,7 +58,7 @@ public class CounterStrike {
             }
             else System.out.println("Назва команди має містити принаймні один символ та не повторюватись для іншої команди.");
         }
-        System.out.println("Перемогла команда");
+        System.out.println("Перемогла команда ");
 
     }
     public static boolean isInt(String arg) {
