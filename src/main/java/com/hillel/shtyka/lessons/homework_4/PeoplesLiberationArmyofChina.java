@@ -1,4 +1,4 @@
-package com.hillel.shtyka.lessons.lesson4;
+package com.hillel.shtyka.lessons.homework_4;
 
 public class PeoplesLiberationArmyofChina
 {

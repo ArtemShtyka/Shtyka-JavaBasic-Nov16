@@ -1,4 +1,4 @@
-package com.hillel.shtyka.lessons.lesson1;
+package com.hillel.shtyka.lessons.homework_2;
 
 public class HelloWorld
 {

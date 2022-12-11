@@ -1,4 +1,4 @@
-package com.hillel.shtyka.lessons.lesson2;
+package com.hillel.shtyka.lessons.homework_3;
 
 import java.util.Scanner;
 
