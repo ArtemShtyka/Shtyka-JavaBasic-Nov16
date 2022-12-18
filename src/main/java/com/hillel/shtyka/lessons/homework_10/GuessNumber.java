@@ -3,7 +3,7 @@ package com.hillel.shtyka.lessons.homework_10;
 import java.util.Scanner;
 import java.lang.Math;
 
-public class Guess {
+public class GuessNumber {
     public static void main(String[] args) {
         int count = 1, attempts = 3, number = (int)(Math.random()*10);
         Scanner userInput = new Scanner(System.in);
