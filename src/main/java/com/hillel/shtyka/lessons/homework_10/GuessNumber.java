@@ -11,7 +11,7 @@ public class GuessNumber {
         while(count <= attempts) {
             if(userInput.hasNextInt()) {
                 int userGuess = userInput.nextInt();
-                if(userGuess >= 0 && userGuess <= 10) {
+                if(userGuess >= 0 && userGuess < 11) {
                     if(userGuess == number) {
                         System.out.print("Вітаємо! Ви вгадали число з " + count + "-ї спроби!\n");
                         break;
