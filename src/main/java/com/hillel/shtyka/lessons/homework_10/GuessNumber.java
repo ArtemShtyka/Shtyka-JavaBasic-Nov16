@@ -7,11 +7,11 @@ public class GuessNumber {
     public static void main(String[] args) {
         int count = 1, attempts = 3, number = (int)(Math.random()*11);
         Scanner userInput = new Scanner(System.in);
-        System.out.print("Комп'ютером загадано випадкове число від 0 до 9 включно. \nСпробуйте вгадати це число у 3 спроби: \n");
+        System.out.print("Комп'ютером загадано випадкове число від 0 до 10 включно. \nСпробуйте вгадати це число у 3 спроби: \n");
         while(count <= attempts) {
             if(userInput.hasNextInt()) {
                 int userGuess = userInput.nextInt();
-                if(userGuess >= 0 && userGuess < 11) {
+                if(userGuess >= 0 && userGuess <= 10) {
                     if(userGuess == number) {
                         System.out.print("Вітаємо! Ви вгадали число з " + count + "-ї спроби!\n");
                         break;
