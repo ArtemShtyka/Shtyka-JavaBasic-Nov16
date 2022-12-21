@@ -15,6 +15,7 @@ public class Lottery {
         for(i = 0; i < pool; i += 1){
             set[i] = prettyRandom(0, 9);
         }
+        System.out.println("Вітаємо в лотереї! Введіть 7 чисел в діапазоні від 0 до 9 включно, а також номер банківської картки, та три цифри і термін дії зі звороту.");
         Scanner userInput = new Scanner(System.in);
         i = 0;
         while(i < 7){
@@ -23,20 +24,18 @@ public class Lottery {
                 int n = Integer.parseInt(token);
                 if(n >= 0 && n < 10){
                     guess[i] = n;
-                    //if(guess[i] == set[i]) matches += 1;
                     i += 1;
-                    System.out.print(" " + set[i] + " | " + guess[i] + " ");
                 }
-                else System.out.println("Each number must be between 0 and 9 inclusively");
+                else System.out.println("Числа повинні знаходитись у діапазоні від 0 до 9 включно.");
             }
-            else System.out.println("Enter the correct number");
+            else System.out.println("Введіть дійсне число.");
         }
         Arrays.sort(set);
         Arrays.sort(guess);
         for(i = 0; i < pool; i += 1){
             if(guess[i] == set[i]) matches += 1;
         }
-        System.out.println("Кількість збігів: " + matches);
+        System.out.println("\nКількість збігів: " + matches);
     }
     public static int prettyRandom(int bottom, int top){
         return bottom + (int)(Math.random()*((top-bottom)+1));
