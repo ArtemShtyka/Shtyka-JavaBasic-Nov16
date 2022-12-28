@@ -1,10 +1,8 @@
 package com.hillel.shtyka.lessons.homework_13;
 
 public class Burger {
-    String bun = "житня",
-            cheese = "чеддар",
-            lettuce = "листя салату";
-    boolean mayonnaise = false, extraBeef = false;
+    String bun, cheese, lettuce;
+    boolean mayonnaise, extraBeef;
 
     public Burger(String bun, String cheese, String lettuce) {
         this.bun = bun;
@@ -29,7 +27,7 @@ public class Burger {
     }
     void burgerContent(String bun, String cheese, String lettuce, boolean mayonnaise, boolean extraBeef) {
         System.out.println("Ваш вибір: " + ((extraBeef == true) ?
-                ("бургер з подвійним м'ясом." : ((mayonnaise == true) ? "класичний бургер." : "дієтичний бургер без майонезу.")) +
+                ("бургер з подвійним м'ясом.") : ((mayonnaise == true) ? "класичний бургер." : "дієтичний бургер без майонезу.")) +
         "Булочка: " + bun + ", сир: " + cheese + ", зелень: " + lettuce);
     }
 }
