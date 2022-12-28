@@ -26,8 +26,8 @@ public class Burger {
         burgerContent(bun, cheese, lettuce, mayonnaise, extraBeef);
     }
     void burgerContent(String bun, String cheese, String lettuce, boolean mayonnaise, boolean extraBeef) {
-        System.out.println("Ваш вибір: " + ((extraBeef == true) ?
-                ("бургер з подвійним м'ясом.") : ((mayonnaise == true) ? "класичний бургер." : "дієтичний бургер без майонезу.")) +
-        "Булочка: " + bun + ", сир: " + cheese + ", зелень: " + lettuce);
+        System.out.println("Ваш вибір: " + ((extraBeef) ?
+                ("бургер з подвійним м'ясом.") : ((mayonnaise) ? "класичний бургер." : "дієтичний бургер без майонезу.")) +
+        " Булочка: " + bun + ", сир: " + cheese + ", зелень: " + lettuce);
     }
 }
