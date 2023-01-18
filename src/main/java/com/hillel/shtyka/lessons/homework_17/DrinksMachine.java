@@ -7,7 +7,7 @@ public enum DrinksMachine {
     MOJITO(Drinks.MOJITO_COST),
     WATER(Drinks.WATER_COST),
     COLA(Drinks.COLA_COST);
-    private double cost;
+    private final double cost;
     DrinksMachine(double cost) {
         this.cost = cost;
     }
